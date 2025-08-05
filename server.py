@@ -3,7 +3,7 @@ import threading
 import struct
 import time
 from queue import Queue
-import sys # <--- Added import sys
+import sys 
 
 class Server:
     def __init__(self, port=5001):
@@ -263,4 +263,5 @@ class Server:
             print("Server shutdown complete.")
 
 if __name__ == "__main__":
+
     server = Server()
