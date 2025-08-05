@@ -9,7 +9,7 @@ from tkinter import scrolledtext, filedialog, messagebox
 from pathlib import Path
 
 class ClientApp:
-    def __init__(self, root, server_ip_arg=None): # Renamed server_ip to server_ip_arg for clarity
+    def __init__(self, root, server_ip_arg=None):
         self.root = root
         self.root.title("Chat-Room")
         self.initial_server_ip = server_ip_arg # Store the initial IP from argument
@@ -499,4 +499,5 @@ if __name__ == "__main__":
     # Pass server IP from command line if provided, otherwise None
     arg_server_ip = sys.argv[1] if len(sys.argv) > 1 else None
     app = ClientApp(root, server_ip_arg=arg_server_ip)
+
     root.mainloop()
